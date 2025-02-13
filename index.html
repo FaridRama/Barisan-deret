@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Barisan dan Deret</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Barisan dan Deret</h1>
+        <div class="form-group">
+            <label for="firstTerm">Suku Pertama (a):</label>
+            <input type="number" id="firstTerm" required>
+        </div>
+        <div class="form-group">
+            <label for="commonDifference">Beda (d) / Rasio (r):</label>
+            <input type="number" id="commonDifference" required>
+        </div>
+        <div class="form-group">
+            <label for="numberOfTerms">Banyaknya Suku (n):</label>
+            <input type="number" id="numberOfTerms" required>
+        </div>
+        <div class="form-group">
+            <button onclick="calculateArithmetic()">Hitung Barisan Aritmatika</button>
+            <button onclick="calculateGeometric()">Hitung Barisan Geometri</button>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
